@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thryft - Home</title>
+        <link rel="stylesheet" href="../selldonostylesheet.css">
+        <link rel="icon" type="image/x=icon" href="Images/favicon (2).ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="../login.js"></script>
+    </head>
+    <body>
+        <!--Logo, Sign in, Add to cart-->
+        <div class="heading">
+            <a href="../index.html">
+                <img class="logo" src="../Images/thryftlogo.png" alt="thryftlogo">
+            </a>
+            <a href="cart.html">
+                <img class="cart" src="../Images/carticon.png" alt="carticon">
+            </a>
+            <a data-modal-target="#modal">
+                <img style="cursor:pointer;" class="account" src="../Images/account.png" alt="accounticon">
+            </a>
+        </div>
+        <div class="sticky" id="navbar">
+            <a href="../Linked_navi_pages/shop.html">Shop</a>
+            <a href="../Linked_navi_pages/about.html">About</a>
+            <a href="../Linked_navi_pages/selldono.html">Sell/Donate</a>
+        </div>
+
+        <section class="parallax">
+            <div class="parallax-inner">
+                <h2 class="mainheading" style="color:white;">SELL/DONATE</h2>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2 class="subheading" id="moneydonations">Donate Money</h2>
+            <section class="parallax1">
+                <div class="subparallax">
+                    <h2 style="color:white;"></h2>
+                </div>
+            </section>
+
+
+            <div class="wrapper">
+                <div class="row1">
+                    <div onclick="myFunction()" class="donate donate1">
+                        <h2 class="amount amount1">$5</h2>
+                    </div>
+                    <div onclick="myFunction()" class="donate donate2">
+                        <h2 class="amount amount2">$10</h2>
+                    </div>
+                    <div onclick="myFunction()" class="donate donate3">
+                        <h2 class="amount amount3">$25</h2>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div onclick="myFunction()" class="donate donate4">
+                        <h2 class="amount amount4">$35</h2>
+                    </div>
+                    <div onclick="myFunction()" class="donate donate5">
+                        <h2 class="amount amount5">$50</h2>
+                    </div>
+                </div>
+                <div class="sidepanel2">
+                </div>
+            </div>  
+        </div>
+
+        <div class="footer">
+            <div class="left-wrapper">
+                <div class="footer-logo">
+                    <img class="footer-white-logo footer-image" src="../Images/whitethryftlogo.png" alt="Thryft Logo">
+                </div><br>
+                <div class="socials">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/facebook.JPG" alt="Facebook Icon">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/instagram.JPG" alt="Instagram Icon">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/twitter.JPG" alt="Twitter Icon">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/youtube.JPG" alt="YouTube Icon">
+                </div>
+            </div>
+            <div class="pillar links">
+                <h2 class="foothead link-header">All Links/Pages</h2><br>
+                <div class="link link1">
+                    <a class="ayy" href="../index.html">Home</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="shop.html">Shop</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="about.html">About</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="selldono.html">Sell/Donate</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="cart.html">My Cart</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h2 class="foothead contact-header">Contact Us</h2><br>
+                <div class="contact-info">
+                    <p>
+                        Dummy Address<br>
+                        Lorem Ipsum Sit Amet<br>
+                        Dummy Pin<br>
+                        Dummy place<br>
+                        Telephone : 1-800-123-4567<br>
+                        Email : info@dummy.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                alert("You have succesfully donated! Thank you for your contribution.");
+            }
+        </script>
+        <div class="modal" id="modal">
+            <div class="login-header">
+                <img class="login-image" src="../Images/whitethryftlogo.png" alt="Thryft Logo">
+                <button data-close-button class="close-button">&times;</button> 
+            </div>
+            <div class="login-body">
+                <label for="user"><b>Username</b></label>
+                <input type="text" placeholder="Input Username" name="user" required>
+
+                <label for="pass"><b>Password</b></label>
+                <input type="password" placeholder="Input Password" name="pass" required>
+
+                <button class="login-btn" type="submit">Login</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </body>
+</html>

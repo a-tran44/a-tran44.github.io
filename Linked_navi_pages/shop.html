@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thryft - Home</title>
+        <link rel="stylesheet" href="../shopstylesheet.css">
+        <link rel="icon" type="image/x=icon" href="Images/favicon (2).ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../store.js" async></script>
+        <script defer src="../login.js"></script>
+    </head>
+    <body>
+        <!--Logo, Sign in, Add to cart-->
+        <div class="heading">
+            <a href="../index.html">
+                <img class="logo" src="../Images/thryftlogo.png" alt="thryftlogo">
+            </a>
+            <a href="cart.html">
+                <img class="cart" src="../Images/carticon.png" alt="carticon">
+            </a>
+            <a data-modal-target="#modal">
+                <img class="account" src="../Images/account.png" alt="accounticon">
+            </a>
+        </div>
+        <!--Navigation Bar-->
+        <div class="sticky" id="navbar">
+            <a href="../Linked_navi_pages/shop.html">Shop</a>
+            <a href="../Linked_navi_pages/about.html">About</a>
+            <a href="../Linked_navi_pages/selldono.html">Sell/Donate</a>
+        </div><br>
+
+        <section class="parallax">
+            <div class="parallax-inner">
+                <div class="grid">
+                    <!--Row 1-->
+                    <div class="box box1">
+                        <img class="shopimge" src="../Images/shopimg/greyhoodie.jpg" alt="Grey Hoodie">
+                        <pre class="shophead">Grey Hoodie</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$14.50</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box2">
+                        <img class="shopimge" src="../Images/shopimg/blackjeans.jpg" alt="Black Jeans">
+                        <pre class="shophead">Black Jeans</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$20.99</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box3">
+                        <img class="shopimge" src="../Images/shopimg/greenshirt.jpg" alt="Green Shirt">
+                        <pre class="shophead">Green Shirt</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$11.35</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box4">
+                        <img class="shopimge" src="../Images/shopimg/yellowbeanie.jpg" alt="Yellow Beanie">
+                        <pre class="shophead">Yellow Beanie</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$7.50</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!--Row 2-->
+                    <div class="box box5">
+                        <img class="shopimge" src="../Images/shopimg/khakishorts.jpg" alt="Khaki Shorts">
+                        <pre class="shophead">Khaki Shorts</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$25.99</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box6">
+                        <img class="shopimge" src="../Images/shopimg/whitelong.jpg" alt="White Longsleeved">
+                        <pre class="shophead">White Longsleeved Shirt</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$17.25</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box7">
+                        <img class="shopimge" src="../Images/shopimg/whiterun.jpg" alt="White Running Shoes">
+                        <pre class="shophead">White Running Shoes</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$60.99</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box8">
+                        <img class="shopimge" src="../Images/shopimg/blackrun.jpg" alt="Black Running Shoes">
+                        <pre class="shophead">Black Running Shoes</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$68.69</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!--Row 3-->
+                    <div class="box box9">
+                        <img class="shopimge" src="../Images/shopimg/blacksocks.jpg" alt="Black Socks">
+                        <pre class="shophead">Black Socks</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$14.20</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box10">
+                        <img class="shopimge" src="../Images/shopimg/blackturtle.jpg" alt="Black Turtleneck">
+                        <pre class="shophead">Black Longsleeved Turtleneck</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$15.35</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box11">
+                        <img class="shopimge" src="../Images/shopimg/strscarf.jpg" alt="Striped Scarf">
+                        <pre class="shophead">Striped Scarf</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$11.20</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="box box12">
+                        <img class="shopimge" src="../Images/shopimg/beitrench.jpg" alt="Beige Trenchcoat">
+                        <pre class="shophead">Beige Trenchcoat</pre><br>
+                        <div class="itemdetails">
+                            <span class="price"><b>$46.65</b></span>
+                            <button onclick="myFunction()" class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+        </section>
+        
+        <div class="button-container">
+            <button data-modal-target="#modal" class="btn btn-primary btn-purchase">Log In to Purchase</button>
+        </div>
+
+        <div class="footer">
+            <div class="left-wrapper">
+                <div class="footer-logo">
+                    <img class="footer-white-logo footer-image" src="../Images/whitethryftlogo.png" alt="Thryft Logo">
+                </div><br>
+                <div class="socials">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/facebook.JPG" alt="Facebook Icon">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/instagram.JPG" alt="Instagram Icon">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/twitter.JPG" alt="Twitter Icon">
+                    <img class="mediaicons footer-image" src="../Images/socialicons/youtube.JPG" alt="YouTube Icon">
+                </div>
+            </div>
+            <div class="pillar links">
+                <h2 class="foothead link-header">All Links/Pages</h2><br>
+                <div class="link link1">
+                    <a class="ayy" href="../index.html">Home</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="shop.html">Shop</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="about.html">About</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="selldono.html">Sell/Donate</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="cart.html">My Cart</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h2 class="foothead contact-header">Contact Us</h2><br>
+                <div class="contact-info">
+                    <p>
+                        Dummy Address<br>
+                        Lorem Ipsum Sit Amet<br>
+                        Dummy Pin<br>
+                        Dummy place<br>
+                        Telephone : 1-800-123-4567<br>
+                        Email : info@dummy.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="login-header">
+                <img class="login-image" src="../Images/whitethryftlogo.png" alt="Thryft Logo">
+                <button data-close-button class="close-button">&times;</button> 
+            </div>
+            <div class="login-body">
+                <label for="user"><b>Username</b></label>
+                <input type="text" placeholder="Input Username" name="user" required>
+
+                <label for="pass"><b>Password</b></label>
+                <input type="password" placeholder="Input Password" name="pass" required>
+
+                <button class="login-btn" type="submit">Login</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        
+        <script>
+            function myFunction() {
+                alert("Login or create an account first.");
+            }
+        </script>
+    </body>
+</html>

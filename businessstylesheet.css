@@ -1,0 +1,395 @@
+/*logos and icons*/
+.logo {
+  width:15%;height:15%;
+  margin: 20px 20px;
+}
+
+.cart {
+  float: right;
+  width:3%;height:3%;
+  margin: 33px 38px;
+}
+.account {
+  float: right;
+  width:3%;height:3%;
+  margin: 33px 38px;
+}
+
+/* Navigation Bar */
+*{
+  margin:0;
+  padding:0;
+}
+
+/* Navbar container */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+
+  }
+  
+  /* Links inside the navbar */
+  #navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 15px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  
+  /* Add a red background color to navbar links on hover */
+  #navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    color: red;
+  }
+  
+  Style links inside the columns
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a background color on hover */
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Index page images */
+.home {
+  margin: 0 300px;
+}
+
+/* sticky navbar - ULTIMATE STICK */
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  border: 5px solid rgb(255, 240, 240);
+}
+
+.active {
+  background-color: #e7e7e7;
+}
+
+/* Fading animation - didn't add because the animation overlapped navbar
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(225px, auto);
+  margin: 5px 12px;
+}
+
+.grid > div {
+  background: #dbd4d4;
+  padding: 4em 1em;
+}
+
+.grid > div:nth-child(odd) {
+  background: #605569;
+}
+
+/* countdown styling */
+.cntdwngrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 5px 12px;
+  background: #d4a152;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.countdownheading {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(29, 25, 25);
+}
+
+.salecountdown {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day,.hour,.minute,.second {
+  font-size: 25px;
+  font-family:verdana;
+  display: grid;
+  background: whitesmoke;
+  border-radius: 10px;
+  color: #89352a;
+  
+}
+
+/*headings for image sliders */
+.newarrhead {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.recchead {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* draggable slides - new arrivals */
+img {
+  width: 100%;
+}
+
+.arrdragcontainer {
+  position: relative;
+  width: 1000px;
+  height: 170px;
+  margin-left: 30px;
+}
+
+.arrcards {
+  position: absolute;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 300px);
+  grid-gap: 1px;
+  display: flex;
+}
+
+.arrcard {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 25px; 
+}
+
+
+/* draggable slides - reccomendations */
+
+.reccontainer {
+  position: relative;
+  width: 1000px;
+  height: 170px;
+  margin-left: 30px;
+}
+
+.reccards {
+  position: absolute;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 300px);
+  grid-gap: 1px;
+  display: flex;
+}
+
+.reccard {
+  border: 1px solid #eee;
+  border-radius: 2em;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Login form */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 40px;
+  z-index: 10;
+  background: #13131d;
+  width: 550px;
+  max-width: 80%;
+  height: 675px;
+  max-height: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.login-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-image {
+  width: 20%; height: 20%;
+  max-width: 80%; max-height: 80%;
+}
+
+.login-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2em;
+  margin-right: 40px;
+  color: white;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 20px 20px;
+  margin: 25px auto;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: verdana;
+}
+
+.login-body {
+  display: grid;
+  margin: 20px 30px;
+  font-family: georgia;
+}
+
+.login-btn {
+  background-color: #b98d34;
+  color: white;
+  padding: 20px 100px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  border-radius: 12px;
+  font-size: 18px;
+  margin: 8px auto;
+}
+
+
+.login-btn:hover {
+  background-color: #a88131;
+}
+
+label {
+  margin: auto;
+  color: rgb(224, 224, 224);
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  background: #333;
+  margin: 15px 12px;
+  padding: 40px 20px 55px 20px;
+  color: rgb(235, 235, 235);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mediaicons {
+  width: 8%;
+  height: 8%;
+}
+
+.footer-white-logo {
+  width: 20%; height: 20%;
+}
+
+.socials {
+  margin-left: 15px;
+}
+
+.link {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ayy {
+  color: white;
+}

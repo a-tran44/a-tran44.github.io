@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thryft - Home</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="businessstylesheet.css">
+        <link rel="icon" type="image/x=icon" href="Images/favicon (2).ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="login.js"></script>
+    </head>
+    <body>
+        <!--Logo, Sign in, Add to cart-->
+        <div class="heading">
+            <a href="index.html">
+                <img class="logo" src="Images/thryftlogo.png" alt="thryftlogo">
+            </a>
+            <a href="Linked_navi_pages/cart.html">
+                <img class="cart" src="Images/carticon.png" alt="carticon">
+            </a>
+            <a data-modal-target="#modal">
+                <img style="cursor:pointer;" class="account" src="Images/account.png" alt="accounticon">
+            </a>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="login-header">
+                <img class="login-image" src="Images/whitethryftlogo.png" alt="Thryft Logo">
+                <button data-close-button class="close-button">&times;</button> 
+            </div>
+            <div class="login-body">
+                <label for="user"><b>Username</b></label>
+                <input type="text" placeholder="Input Username" name="user" required>
+
+                <label for="pass"><b>Password</b></label>
+                <input type="password" placeholder="Input Password" name="pass" required>
+
+                <button class="login-btn" type="submit">Login</button>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+        <!--Navigation Bar-->
+        <div class="sticky" id="navbar" >
+            <a href="Linked_navi_pages/shop.html">Shop</a>
+            <a href="Linked_navi_pages/about.html">About</a>
+            <a href="Linked_navi_pages/selldono.html">Sell/Donate</a>
+        </div><br>
+        <div class="cntdwngrid">
+            <section class="salecountdown">
+                <div>
+                    <h2 class="countdownheading">OPENING SALE - Ends in:</h2><br>
+                    <div class="countdown">
+                        <div c;ass="container-day">
+                            <h3 class="day">Time</h3>
+                            <h3>Days</h3>
+                        </div>
+                        <div c;ass="container-hour">
+                            <h3 class="hour">Time</h3>
+                            <h3>Hours</h3>
+                        </div>
+                        <div c;ass="container-minute">
+                            <h3 class="minute">Time</h3>
+                            <h3>Minutes</h3>
+                        </div>
+                        <div c;ass="container-second">
+                            <h3 class="second">Time</h3>
+                            <h3>Seconds</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div><br>
+        <div class="grid">
+            <div class="box box1"></div>
+            <div class="box box2">
+                <div class="slideshow-container">
+                    <!--Slide 1-->
+                    <div class="mySlides fade">
+                        <img src="Images/homeimg/homeimg1.JPG" style="width:100%">
+                    </div>
+                    <!--Slide 2-->
+                    <div class="mySlides fade">
+                        <img src="Images/homeimg/homeimg2.JPG" style="width:100%">
+                    </div>
+                    <!--Slide 3-->
+                    <div class="mySlides fade">
+                        <img src="Images/homeimg/homeimg3.JPG" style="width:100%">
+                    </div>
+                </div><br>
+                <h2 class="newarrhead">New Additions!</h2><br>
+                <div class="arrdragcontainer">
+                    <div class="arrcards">
+                        <div class="arrcard">
+                            <img src="Images/imageslider/belt.jpg" alt="belt">
+                        </div>
+                        <div class="arrcard">
+                            <img src="Images/imageslider/closet.jpg" alt="closet">
+                        </div>
+                        <div class="arrcard">
+                            <img src="Images/imageslider/coathanger.jpg" alt="hanger">
+                        </div>
+                        <div class="arrcard">
+                            <img src="Images/imageslider/jeanshoes.jpg" alt="jean">
+                        </div>
+                    </div>
+                </div><br>
+                <h2 class="recchead">Reccomendations - For You</h2><br>
+                <div class="reccontainer">
+                    <div class="reccards">
+                        <div class="reccard">
+                            <img src="Images/imageslider/rainbowcloth.jpg" alt="rainbow">
+                        </div>
+                        <div class="reccard">
+                            <img src="Images/imageslider/knitsw.jpg" alt="knit sweaters">
+                        </div>
+                        <div class="reccard">
+                            <img src="Images/imageslider/babyclothes.jpg" alt="baby clothes">
+                        </div>
+                        <div class="reccard">
+                            <img src="Images/imageslider/hanger3.jpg" alt="hangers">
+                        </div>
+                        <div class="reccard">
+                            <img src="Images/imageslider/hanger.jpg" alt="more hangers">
+                        </div>
+                        <div class="reccard">
+                            <img src="Images/imageslider/knitsweater.jpg" alt="stack of knit sweaters">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box3"></div>
+        </div>
+
+        <div class="footer">
+            <div class="left-wrapper">
+                <div class="footer-logo">
+                    <img class="footer-white-logo footer-image" src="Images/whitethryftlogo.png" alt="Thryft Logo">
+                </div><br>
+                <div class="socials">
+                    <img class="mediaicons footer-image" src="Images/socialicons/facebook.JPG" alt="Facebook Icon">
+                    <img class="mediaicons footer-image" src="Images/socialicons/instagram.JPG" alt="Instagram Icon">
+                    <img class="mediaicons footer-image" src="Images/socialicons/twitter.JPG" alt="Twitter Icon">
+                    <img class="mediaicons footer-image" src="Images/socialicons/youtube.JPG" alt="YouTube Icon">
+                </div>
+            </div>
+            <div class="pillar links">
+                <h2 class="foothead link-header">All Links/Pages</h2><br>
+                <div class="link link1">
+                    <a class="ayy" href="index.html">Home</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="Linked_navi_pages/shop.html">Shop</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="Linked_navi_pages/about.html">About</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="Linked_navi_pages/selldono.html">Sell/Donate</a>
+                </div>
+                <div class="link link1">
+                    <a class="ayy" href="Linked_navi_pages/cart.html">My Cart</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h2 class="foothead contact-header">Contact Us</h2><br>
+                <div class="contact-info">
+                    <p>
+                        Dummy Address<br>
+                        Lorem Ipsum Sit Amet<br>
+                        Dummy Pin<br>
+                        Dummy place<br>
+                        Telephone : 1-800-123-4567<br>
+                        Email : info@dummy.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="stickynavbar.js"></script>
+        <script src="homeslideshow.js"></script>
+        <script src="draggable.js"></script>
+        <script src="countdown.js"></script>
+    </body>
+</html>
